@@ -1,0 +1,20 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block categories %}
+<form method="POST">
+  <div class="mb-3">
+      {% csrf_token %}
+      <label for="name" class="form-label" name="name" placeholder="type your name here">Name</label>
+    <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="phone" class="form-label" name="Phone" placeholder="type your phone number here">type your phone number here</label>
+    <input type="text" class="form-control" id="phone">
+  </div>
+      <div class="mb-3" >
+    <label for="address" class="form-label" name="name" >enter your address here</label>
+    <input type="text" class="form-control" id="inputaddress">
+  </div>
+  <button type="submit" class=" btn btn-success ">Place Order</button>
+</form>
+{% endblock %}

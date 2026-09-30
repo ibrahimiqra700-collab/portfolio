@@ -1,0 +1,15 @@
+{% extends 'home/base.html'%}
+{% load static %}
+{% block content %}
+{% for order in orders%}
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{order.user}}</h5>
+    <h5 class="card-title">{{order.total_price}}</h5>
+      <h5 class="card-title">{{order.is_paid}}</h5>
+      <h5 class="card_title">{{order.created_at}}</h5>
+  </div>
+</div>
+{% endfor %}
+
+{% endblock %}

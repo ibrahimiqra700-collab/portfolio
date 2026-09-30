@@ -1,0 +1,28 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block categories %}
+{% for card in cards %}
+<div class="card">
+    <div class="row">
+        {%if card.item.image %}
+        <img src="{{card.item.image.url }}">
+        {% else %}
+        <p>no image found</p>
+        {% endif %}
+<div class="card text-dark bg-warning mb-3">
+    <div class="col-mp-4">
+  <div class="card-header">{{card.item.name}}</div>
+  <div class="card-body">
+    <h5 class="card-title">Rs{{ card.item.price}}</h5>
+      <a href="{% url 'plus' card.id %}" value="+" class="btn btn-primary btn-sm">+</a>
+    <h5 class="card-title">{{card.quantity}}</h5>
+     <a href="{% url 'minus' card.id %}" value="-" class="btn btn-primary btn-sm">-</a>
+      <h5 class="card_title">{{total}}</h5>
+      <a href="{% url 'delete_card' card.id %}" class="btn btn-primary btn-sm">delete</a>
+      <a href="{% url 'checkout'%}" class="btn btn-primary">Proceed to checkout</a>
+  </div>
+        </div>
+    </div>
+</div>
+    {% endfor %}
+{% endblock %}

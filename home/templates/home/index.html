@@ -1,0 +1,113 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+
+{% block title %}home page{% endblock %}
+{% block content %}
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="{% static 'images/accessories.jpeg' %}" class="d-block w-100"  alt="accessories">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="{% static 'images/accesories1.jpeg' %}" class="d-block w-100"  alt="accesories1">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/products.jpeg' %}" class="d-block w-100" alt="produts">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="my-2 mx-2">
+<div class="card-group">
+  <div class="card">
+    <div class="mx-2 my-2">
+    <img src="{% static 'images/Shiny nails.jpeg' %}" class="card-img-top" alt="shiny nails">
+    <div class="card-body">
+      <h5 class="card-title">Shiny nails</h5>
+      <p class="card-text">“Discover stylish and glossy nail designs to add a touch of sparkle to your look.” ✨💅</p>
+    </div>
+      </div>
+  </div>
+  <div class="card">
+    <div class="mx-2 my-2">
+    <img src="{% static 'images/home decor gift set.jpeg' %}" class="card-img-top" alt="home decor gift set">
+    <div class="card-body">
+      <h5 class="card-title">H0ME DECOR</h5>
+      <p class="card-text">“Beautiful decor sets to add a stylish and cozy touch to your home.” ✨🏠</p>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="mx-2 my-2">
+    <img src="{% static 'images/hair clip.jpeg' %}" class="card-img-top" alt="hair clip">
+    <div class="card-body">
+      <h5 class="card-title">HAIR CLIP</h5>
+      <p class="card-text">“Cute and stylish hair clips to add a charming touch to your everyday look.” ✨🎀</p>
+    </div>
+      </div>
+  </div>
+</div>
+</div>
+<div class="mx-2 my-2">
+<div class="card-group">
+  <div class="card">
+    <div class="mx-2 my-2">
+    <img src="{% static 'images/glass bottle.jpeg' %}" class="card-img-top" alt="glass bottle">
+    <div class="card-body">
+      <h5 class="card-title">GLASS BOTTLE</h5>
+      <p class="card-text">“Elegant glass bottles designed to add style and charm to your everyday essentials.” ✨🫧</p>
+    </div>
+      </div>
+  </div>
+  <div class="card">
+    <div class="mx-2 my-2">
+    <img src="{% static 'images/gift hamper.jpeg' %}" class="card-img-top" alt="gift hamper">
+    <div class="card-body">
+      <h5 class="card-title">GIFT HAMPER</h5>
+      <p class="card-text">“Thoughtfully curated gift hampers, perfect for making every occasion special.” 🎁✨</p>
+    </div>
+      </div>
+  </div>
+  <div class="card">
+    <div class="mx-2 my-2">
+    <img src="{% static 'images/keychains.jpeg' %}" class="card-img-top" alt="keychains">
+    <div class="card-body">
+      <h5 class="card-title">KEY CHAINS</h5>
+      <p class="card-text">“Cute and stylish keychains to add a fun touch to your keys and bags.” 🔑✨</p>
+    </div>
+      </div>
+  </div>
+</div>
+  <div class="mx-2 my-2">
+<div class="card-group">
+  <div class="card">
+    <div class="mx-2 my-2">
+    <img src="{% static 'images/bouquet.jpeg'%}" class="card-img-top" alt="bouquet">
+    <div class="card-body">
+      <h5 class="card-title">BOUQUET</h5>
+      <p class="card-text">“Beautiful bouquets, perfect for adding a lovely touch to every special moment.” 💐✨</p>
+    </div>
+      </div>
+  </div>
+  <div class="card">
+    <div class="mx-2 my-2">
+    <img src="{% static 'images/glassjar.jpeg' %}" class="card-img-top" alt="glassjar">
+    <div class="card-body">
+      <h5 class="card-title">GLASS JAR</h5>
+      <p class="card-text">“Elegant glass jars to beautifully organize and display your favorite essentials.” ✨</p>
+    </div>
+      </div>
+  </div>
+  </div>
+  </div>
+
+{% endblock %}
+

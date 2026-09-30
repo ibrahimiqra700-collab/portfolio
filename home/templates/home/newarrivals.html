@@ -1,0 +1,122 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block title%} New arrivals {% endblock %}
+{% block content %}
+{% for product in products%}
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/Travel Bottle Set.jpeg' %}" class="img-fluid rounded-start" alt="Travel Bottle Set">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">TRAVEL BOTTLE SET</h5>
+        <p class="card-text">“Convenient and stylish travel bottle set, perfect for carrying your favorite liquids while keeping your travel essentials organized.” ✨</p>
+        <a href="/wishlist/{{product.id}}/" class="btn btn-primary">Wishlist</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/Sweet beauty loolipop.jpeg' %}" class="img-fluid rounded-start" alt="Sweet beauty loolipop">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Sweet Beauty lollipop</h5>
+        <p class="card-text">Description: “A cute and playful makeup set designed to add a fun touch to your beauty collection, perfect for everyday use or gifting.” ✨</p>
+        <a href="/wishlist/{{product.id}}/" class="btn btn-primary">Wishlist</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/Smiley pillow.jpeg' %}" class="img-fluid rounded-start" alt="smiley pillow">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Smiley Pillow</h5>
+        <p class="card-text">“A cute and soft smiley pillow, perfect for adding a cheerful and cozy touch to your room or gifting to someone special.” 😊🧸</p>
+        <a href="/wishlist/{{product.id}}/" class="btn btn-primary">Wishlist</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/Sipper Water Bottle.jpeg' %}" class="img-fluid rounded-start" alt="Sipper Water Bottle">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Sipper Water Bottle</h5>
+        <p class="card-text">“A stylish and practical sipper water bottle, perfect for staying hydrated at home, work, school, or while traveling.” 💧✨</p>
+                <a href="/wishlist/{{product.id}}/" class="btn btn-primary">Wishlist</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/Modern Wooden wall clock.jpeg' %}" class="img-fluid rounded-start" alt="Modern Wooden wall clock">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Modern Wooden Wall Clock</h5>
+        <p class="card-text">“A stylish modern wooden wall clock designed to add a warm and elegant touch to your home or office decor.” 🕰️✨</p>
+        <a href="/wishlist/{{product.id}}/" class="btn btn-primary">Wishlist</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/bow sipper tumbler.jpeg' %}" class="img-fluid rounded-start" alt="bow sipper tumbler">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Bow Sipper Tumbler</h5>
+        <p class="card-text">“A cute and stylish bow sipper tumbler, perfect for keeping your favorite drinks close while adding a charming touch to your everyday style.” 🎀🥤</p>
+        <a href="/wishlist/{{product.id}}/" class="btn btn-primary">Wishlist</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/Glitter hairbrush.jpeg' %}" class="img-fluid rounded-start" alt="glitter hairbrush">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Glitter Hair Brushes</h5>
+        <p class="card-text">“Sparkly and stylish glitter hairbrushes designed to make everyday hair care fun, easy, and beautiful.” ✨💖</p>
+               <a href="/wishlist/{{product.id}}/" class="btn btn-primary">Wishlist</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/bamboo glasses case.jpeg' %}" class="img-fluid rounded-start" alt="bambo glasses case">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Bamboo Glass case</h5>
+        <p class="card-text">“Stylish bamboo glass case designed to keep your glasses safe while adding a natural and elegant touch to your everyday essentials.” 🌿✨</p>
+       <a href="/wishlist/{{product.id}}/" class="btn btn-primary">Wishlist</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% endblock %}
