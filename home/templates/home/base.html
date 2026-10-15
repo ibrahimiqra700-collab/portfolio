@@ -12,36 +12,32 @@
     <link rel="stylesheet" href="{%static 'css/style.css'%}">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light" >
-  <div class="container-fluid" style="background-color:pink;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light"  >
+  <div class="container-fluid" style="background-color:pink;" >
    <img src="{% static 'images/logo.jpeg' %}" height="30px" width="30px">
     <a class="navbar-brand" href="#">Luna Accessories</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color:pink;">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item ">
           <a class="nav-link active" aria-current="page" href="/product/" >
-              product
+              shop
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/newarrivals/"  aria-current="page">NewArrivals</a>
+          <a class="nav-link active" href="/newarrivals/"  aria-current="page">New Arrivals</a>
         </li>
+          <li clas="nav-item">
+              <a class="nav-link active" href="/wishlistpage" aria-current="page">Wish List</a>
+          </li>
 
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-          <a href="/product/"></a>
-          <a href="/newarrivals/"></a>
-      </form>
-    </div>
-  </div>
+
     <!-- Button trigger modal -->
 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#SignupModal" style="background-color:pink;">
   Sing up
@@ -114,9 +110,67 @@
     </div>
   </div>
 </div>
+    </div>
+    </div>
 </nav>
 {% block categories %}{% endblock %}
 {% block content%}{% endblock %}
+<!-- Footer -->
+<footer class="bg-dark text-white mt-5 w-100">
+    <div class="container-fluid px-5 py-5">
+        <div class="row">
+
+            <!-- Brand -->
+            <div class="col-md-3 mb-4">
+                <h4 class="fw-bold">LUNA</h4>
+                <p>
+                    Beautiful accessories and gifts for every occasion.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-bold">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Shop</a></li>
+                    <li><a href="/newarrivals/" class="text-white text-decoration-none">New Arrivals</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Support -->
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-bold">Customer Support</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">FAQs</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Shipping & Delivery</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Returns & Exchange</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-3 mb-4">
+                <h5 class="fw-bold">Contact Us</h5>
+                <p class="mb-2">📍 Lahore, Pakistan</p>
+                <p class="mb-2">📞 +92 3233317511</p>
+                <p class="mb-2">✉️ lunaaccessories@gmail.com</p>
+                <p>Instagram: @supportLunaAccessories</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="text-center">
+            <p class="mb-0">
+                © 2026 Luna Accessories. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
 
 </body>
 
